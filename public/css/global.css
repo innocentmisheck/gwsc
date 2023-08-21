@@ -1,0 +1,124 @@
+ /* Additional styles for message colors */
+ 
+ .message {
+     margin-top: 10px;
+     font-weight: bold;
+ }
+ 
+ .error {
+     color: darkred;
+ }
+ 
+ .success {
+     color: darkgreen;
+ }
+ 
+ .warning {
+     color: darkorange;
+ }
+ 
+ .gender {
+     display: inline-flex;
+ }
+ 
+ .gender input {
+     margin-right: 5%;
+ }
+ 
+ i {
+     cursor: pointer;
+ }
+ 
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     background-color: whitesmoke;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ #home_address {
+     width: 75%;
+ }
+ 
+ #kin_home_address {
+     width: 75%;
+ }
+ 
+ .form-container {
+     background-color: #f0f0f0;
+     padding: 20px;
+     border: 1px solid rgb(39, 41, 42);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     /* Adjust the values for your desired shadow */
+     width: 50%;
+     border-radius: 20px;
+ }
+ 
+ .logo {
+     text-align: center;
+     margin-bottom: 1%;
+     font-weight: bolder;
+     padding-top: 1%;
+ }
+ 
+ label {
+     display: inline-flex;
+     margin-bottom: 5px;
+     font-weight: bolder;
+ }
+ 
+ input {
+     width: 35%;
+     padding: 8px;
+     margin-bottom: 1% !important;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+ 
+ .kys input {
+     width: 30%;
+     font-size: 12px;
+ }
+ 
+ .kys label {
+     font-size: 12px;
+ }
+ 
+ button {
+     background-color: transparent;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+ 
+ button:hover {
+     background-color: transparent;
+ }
+ 
+ .toast-container {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 9999;
+ }
+ 
+ .toast {
+     background-color: rgba(0, 0, 0, 0.1);
+     color: white;
+     padding: 10px 20px;
+     border-radius: 4px;
+ }
+ 
+ .toast_success {
+     background-color: #ccc;
+     color: black;
+     padding: 0.5%;
+     width: fit-content;
+     margin: 0.5%;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
