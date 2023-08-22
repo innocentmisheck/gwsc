@@ -167,7 +167,7 @@ require 'src/controllers/connect.php';
                 <div class="toast-container">
                     <div class="toast">
                         <p class="message <?php echo $insert_result ? 'success' : 'error'; ?>">
-                            <!-- <?php echo $message; ?> -->
+                            <?php echo $message; ?>
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 
-$con = new mysqli('localhost', 'root', '', 'gwsc');
+$con = new mysqli('localhost', 'root', '', 'db_cum');
 
 if($con){
     $message = "Connection initialized successfully!";
