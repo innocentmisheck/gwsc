@@ -5,6 +5,14 @@ $(document).ready(function() {
     }, 5000); // 5 seconds = 5000 milliseconds
 });
 
+$(document).ready(function() {
+    setTimeout(function() {
+        $('.passmessagematch').fadeOut();
+        $('.passmessagemismatch').fadeOut();
+    }, 2000); // 5 seconds = 5000 milliseconds
+});
+
+
 //function convertToUppercase() {
 //  var inputElement = document.getElementById("national_id_input");
 //inputElement.value = inputElement.value.toUpperCase();

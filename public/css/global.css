@@ -1,124 +1,219 @@
- /* Additional styles for message colors */
- 
- .message {
-     margin-top: 10px;
-     font-weight: bold;
- }
- 
- .error {
-     color: darkred;
- }
- 
- .success {
-     color: darkgreen;
- }
- 
- .warning {
-     color: darkorange;
- }
- 
- .gender {
-     display: inline-flex;
- }
- 
- .gender input {
-     margin-right: 5%;
- }
- 
- i {
-     cursor: pointer;
- }
- 
- body {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     margin: 0;
-     background-color: whitesmoke;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- 
- #home_address {
-     width: 75%;
- }
- 
- #kin_home_address {
-     width: 75%;
- }
- 
- .form-container {
-     background-color: #f0f0f0;
-     padding: 20px;
-     border: 1px solid rgb(39, 41, 42);
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-     /* Adjust the values for your desired shadow */
-     width: 50%;
-     border-radius: 20px;
- }
- 
- .logo {
-     text-align: center;
-     margin-bottom: 1%;
-     font-weight: bolder;
-     padding-top: 1%;
- }
- 
- label {
-     display: inline-flex;
-     margin-bottom: 5px;
-     font-weight: bolder;
- }
- 
- input {
-     width: 35%;
-     padding: 8px;
-     margin-bottom: 1% !important;
-     border: 1px solid #ccc;
-     border-radius: 4px;
- }
- 
- .kys input {
-     width: 30%;
-     font-size: 12px;
- }
- 
- .kys label {
-     font-size: 12px;
- }
- 
- button {
-     background-color: transparent;
-     color: white;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
- }
- 
- button:hover {
-     background-color: transparent;
- }
- 
- .toast-container {
-     position: fixed;
-     bottom: 20px;
-     right: 20px;
-     z-index: 9999;
- }
- 
- .toast {
-     background-color: rgba(0, 0, 0, 0.1);
-     color: white;
-     padding: 10px 20px;
-     border-radius: 4px;
- }
- 
- .toast_success {
-     background-color: #ccc;
-     color: black;
-     padding: 0.5%;
-     width: fit-content;
-     margin: 0.5%;
-     font-weight: bold;
-     text-transform: uppercase;
- }
+/* Additional styles for message colors */
+.g-recaptcha{
+    margin-top: 1%;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.error {
+    color: darkred;
+}
+
+.success {
+    color: darkgreen;
+}
+
+.warning {
+    color: darkorange;
+}
+
+.gender {
+    display: inline-flex;
+}
+
+.gender input {
+    margin-right: 5%;
+}
+
+i {
+    cursor: pointer;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#home_address {
+    width: 75%;
+}
+
+#kin_home_address {
+    width: 75%;
+}
+
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid rgb(39, 41, 42);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adjust the values for your desired shadow */
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1% !important;
+}
+
+.logo {
+    text-align: center;
+    font-weight: bolder;
+    color: #F0F0F0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+label {
+    display: inline-flex;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+input {
+    width: 35%;
+    padding: 8px;
+    margin-bottom: 1% !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.passmessagematch{
+    background-color: green; color:white; display: none; width: fit-content; font-weight: bold; padding:0.5%;
+}
+
+.passmessagemismatch{
+    background-color: red; color:white; display: none; width: fit-content; font-weight: bold; padding:0.5%;
+
+}
+
+  select {
+    width: 35%;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  option {
+    font-size: 16px;
+  }
+.kys input {
+    width: 30%;
+    font-size: 12px;
+}
+
+.kys label {
+    font-size: 12px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.toast_success {
+    color: black;
+    padding: 0.5%;
+    background-color:#F0F0F0;
+    width: fit-content;
+    margin: 0.5%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Target the scrollbar track */
+
+ ::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+
+/* Target the scrollbar thumb (the draggable part) */
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scrollbar thumb */
+}
+
+
+/* Target the scrollbar track when the thumb is being hovered */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color when hovered */
+}
+
+
+/* Target the scrollbar track when it's being hovered */
+
+ ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Color of the scrollbar track */
+}
+
+ :-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Color of the scrollbar track */
+}
+
+
+/* Color of the scrollbar track */
+
+.ui.footer.segment {
+    padding: 3em 0;
+    flex-shrink: 0;
+}
