@@ -1,8 +1,8 @@
-# Ignore images in the public directory
-/public/images/*.png
-/public/images/*.jpg
-/public/images/*.jpeg
-/public/images/*.gif
-/public/images/*.bmp
-/public/images/*.svg
-/public/images/*.mp4
+# Ignore ** in the public directory
+/public/**/*.png
+/public/**/*.jpg
+/public/**/*.jpeg
+/public/**/*.gif
+/public/**/*.bmp
+/public/**/*.svg
+/public/**/*.mp4
